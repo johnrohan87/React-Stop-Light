@@ -16,19 +16,29 @@ const MyPage = () => {
 
 	return (
 		<div className="container centered w-25 h-10 mx-auto pt-5 rounded border border-dark">
-			<div className="btn-group-vertical">
-				<div className={color === "red" ? "red active" : "red inactive"} onClick={() => setColor("red")}>
-					red
+			<div className="btn-group-vertical w-100 h-100 text-center row">
+				<div className="col">
+					<div
+						className={color === "red" ? "red active rounded-circle" : "red inactive rounded-circle"}
+						onClick={() => setColor("red")}>
+						red
+					</div>
 				</div>
-				<div
-					className={color === "yellow" ? "yellow active" : "yellow inactive"}
-					onClick={() => setColor("yellow")}>
-					yellow
+				<div className="col">
+					<div
+						className={
+							color === "yellow" ? "yellow active rounded-circle" : "yellow inactive rounded-circle"
+						}
+						onClick={() => setColor("yellow")}>
+						yellow
+					</div>
 				</div>
-				<div
-					className={color === "green" ? "green active" : "green inactive"}
-					onClick={() => setColor("green")}>
-					green
+				<div className="col">
+					<div
+						className={color === "green" ? "green active rounded-circle" : "green inactive rounded-circle"}
+						onClick={() => setColor("green")}>
+						green
+					</div>
 				</div>
 
 				<div>Light Status {color}</div>
