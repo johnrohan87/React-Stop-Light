@@ -1,3 +1,27 @@
 /* 
     General Styles
 */
+div.red.active{
+    background-color: red;
+    box-shadow: 0 0 60px 30px red;
+}
+div.red.inactive{
+    background-color: grey;
+    
+}
+div.yellow.active{
+    background-color: yellow;
+    box-shadow: 0 0 60px 30px yellow;
+}
+div.yellow.inactive{
+    background-color: grey;
+    
+}
+div.green.active{
+    background-color: green;
+    box-shadow: 0 0 60px 30px green;
+}
+div.green.inactive{
+    background-color: grey;
+    
+}
